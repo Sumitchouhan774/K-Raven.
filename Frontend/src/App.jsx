@@ -10,7 +10,7 @@ function App() {
     async function handleClick() {
         try {
             setUser("Please wait....");
-            const res = await axios.post("http://localhost:5000/generate", {prompt})
+            const res = await axios.post("https://kravenbackend.vercel.app/generate", {prompt})
             setResopnse(res.data.response);
         }
         catch(error) {

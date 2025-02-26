@@ -1,10 +1,11 @@
 const Express = require("express");
 const cors = require("cors");
+require('dotenv').config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = Express();
 
-const genAI = new GoogleGenerativeAI("AIzaSyDLnZ6wQGmpk57-6eeMQDJKDhlZUDad29Q");
+const genAI = new GoogleGenerativeAI(process.env.API);
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 app.use(cors());
@@ -29,6 +30,6 @@ app.post("/generate", async (req, res) => {
 
 // const prompt = "Explain how AI works";
 
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Server is started");
 })
