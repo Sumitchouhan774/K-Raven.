@@ -2,7 +2,7 @@
 
 > **A sleek, smart, and lightning-fast AI chatbot powered by Google's Generative AI!**
 
-🌟 Live Demo: [K-Raven AI](https://kravenbackend.vercel.app)
+🌟 Live Demo: [K-Raven AI](https://kraven.vercel.app/)
 
 ---
 
