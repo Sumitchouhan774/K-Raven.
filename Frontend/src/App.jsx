@@ -12,6 +12,7 @@ function App() {
             setUser("Please wait....");
             const res = await axios.post("https://kravenbackend.vercel.app/generate", {prompt})
             setResopnse(res.data.response);
+            setPrompt("");
         }
         catch(error) {
             setUser("Error while Fetching your request, Try again")
