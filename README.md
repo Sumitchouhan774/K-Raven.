@@ -38,7 +38,7 @@
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/k-raven.git
-   cd k-raven
+   cd K-Raven
    ```
 2. Install dependencies:
    ```sh
@@ -52,7 +52,7 @@
    ```
 4. Start the backend:
    ```sh
-   npm start
+   node server.js
    ```
 
 #### 🎨 Frontend Setup:
@@ -66,7 +66,7 @@
    ```
 3. Run the React app:
    ```sh
-   npm start
+   npm run dev
    ```
 
 ---
